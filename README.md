@@ -33,8 +33,8 @@ inputs_file 每行样例格式， 句子需要分词。
 }
 ```
 # requirement
+```
 python=3.6.10
-
 torch=1.0.0
-
 transformers=2.5.1
+```
