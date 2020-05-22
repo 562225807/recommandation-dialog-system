@@ -1,10 +1,11 @@
 # recommandation-dialog-system
-
+### 预计最大传输长度8192
 # useage
 ```python
-python conversation_client.py inputs_file
+python conversation_client.py
 ```
-inputs_file 每行样例格式， 句子需要分词。
+1对1聊天输入不需要分词。
+知识输入如下，需要分词。
 ```json
 {
   "goal": "[1] 问答 ( User 主动 按 『 参考 知识 』   问   『 周迅 』   的 信息 ， Bot 回答 ， User 满意 并 好评 )--> ...... --> [3] 电影 推荐 ( Bot 主动 ， Bot 使用   『 李米的猜想 』   的 某个 评论 当做 推荐 理由 来 推荐   『 李米的猜想 』 ， User 先问 电影 『 国家 地区 、 导演 、 类型 、 主演 、 口碑 、 评分 』 中 的 一个 或 多个 ， Bot 回答 ， 最终 User 接受 ) --> [4] 再见"
@@ -28,7 +29,7 @@ inputs_file 每行样例格式， 句子需要分词。
     [["柳鑫彬", "喜好", "明星"], 
     ["柳鑫彬", "喜好", "电影"], 
     ["柳鑫彬", "喜好", "兴趣点"]], 
-  "conversation": 
+  "history": 
     ["[1] 最近 怎么样 呢 ？"]
 }
 ```
@@ -37,4 +38,5 @@ inputs_file 每行样例格式， 句子需要分词。
 python=3.6.10
 torch=1.0.0
 transformers=2.5.1
+jieba=0.42.1
 ```
