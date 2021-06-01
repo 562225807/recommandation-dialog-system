@@ -1,4 +1,8 @@
 # recommandation-dialog-system
+## 
+```run_language_modeling.py```模型训练
+```run_generation.py```生成
+# LIC2020 比赛设置
 ### 预计最大传输长度8192
 # useage
 ```python
